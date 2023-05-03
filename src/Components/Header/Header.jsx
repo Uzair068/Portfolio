@@ -15,9 +15,9 @@ function Header() {
 
             <ul>
                 <Link to='/project'><li>Projects</li></Link>
-                <li>Education</li>
-                <li>Experience</li>
-                <li>About Me</li>
+                <Link to="/education"><li>Education</li></Link>
+                <Link to="/link"><li>Project-Links</li></Link>
+                <Link to="/about"><li>About Me</li></Link>
             </ul>
 
             <div className='ham'>
