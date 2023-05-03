@@ -1,5 +1,6 @@
 import React from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -7,16 +8,16 @@ function Header() {
     <body>
         <nav>
             <div className="logo">
-                <img src="/images/Logo1.png" alt="" />
+                <Link to='/'><img src="/images/Logo1.png" alt="" /></Link>
             </div>
 
             <input type="checkbox" id='check' />
 
             <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>School</li>
-                <li>Market</li>
+                <Link to='/project'><li>Projects</li></Link>
+                <li>Education</li>
+                <li>Experience</li>
+                <li>About Me</li>
             </ul>
 
             <div className='ham'>
